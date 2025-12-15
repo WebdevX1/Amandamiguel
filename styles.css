@@ -1,0 +1,101 @@
+/* Custom CSS Variables */
+:root {
+  --background: oklch(0.99 0.01 80);
+  --foreground: oklch(0.18 0.02 280);
+  --primary: oklch(0.55 0.22 340);
+  --primary-foreground: oklch(0.99 0.01 80);
+  --secondary: oklch(0.35 0.15 280);
+  --secondary-foreground: oklch(0.99 0.01 80);
+  --muted: oklch(0.96 0.01 80);
+  --muted-foreground: oklch(0.48 0.02 280);
+  --accent: oklch(0.92 0.05 340);
+  --accent-foreground: oklch(0.25 0.1 340);
+  --border: oklch(0.88 0.02 280);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+
+/* Tailwind Utility Classes */
+.font-sans {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-background {
+  background-color: var(--background);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary\/90 {
+  background-color: var(--primary);
+  opacity: 0.9;
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-muted {
+  background-color: var(--muted);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.text-accent-foreground {
+  color: var(--accent-foreground);
+}
+
+.border-border {
+  border-color: var(--border);
+}
+
+/* Smooth scroll offset for fixed nav */
+section {
+  scroll-margin-top: 4rem;
+}
+
+/* Text balance for better line breaks */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+}
